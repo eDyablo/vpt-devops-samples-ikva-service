@@ -14,7 +14,7 @@ WORKDIR /var/workspace
 
 COPY src src
 
-ARG PORT=80
+ARG PORT=8080
 
 ENV PORT=${PORT}
 
