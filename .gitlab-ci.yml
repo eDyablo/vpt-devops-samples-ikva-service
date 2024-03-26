@@ -1,3 +1,6 @@
 include:
 - file: container-helmfile-jobs.gitlab-ci.yml
   project: devops/tools/ci
+
+build container image:
+  extends: .build container image job
