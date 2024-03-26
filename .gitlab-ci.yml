@@ -1,0 +1,3 @@
+include:
+- file: container-helmfile-jobs.gitlab-ci.yml
+  project: devops/tools/ci
