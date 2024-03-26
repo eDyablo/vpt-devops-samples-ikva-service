@@ -1,3 +1,3 @@
 include:
 - file: service.gitlab-ci.yml
-  project: devops/samples/ikva/ikva-infra/service.gitlab-ci.yml
+  project: devops/samples/ikva/ikva-infra
