@@ -1,0 +1,6 @@
+version: '3'
+services:
+  ikva:
+    build:
+      context: .
+      dockerfile: Dockerfile

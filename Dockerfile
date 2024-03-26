@@ -11,3 +11,13 @@ RUN addgroup -S ${CONTAINER_USER_GROUP} \
 USER ${CONTAINER_USER}:${CONTAINER_USER_GROUP}
 
 WORKDIR /var/workspace
+
+COPY src src
+
+ARG PORT=80
+
+ENV PORT=${PORT}
+
+EXPOSE ${PORT}
+
+ENTRYPOINT [ "sh", "src/server.sh" ]
