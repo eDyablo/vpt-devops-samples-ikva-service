@@ -1,2 +1,4 @@
 response="OK"
-request=$(echo $response | nc -v -l -p $SERVICE_PORT)
+while true; do
+  request=$(echo $response | nc -v -l -p $SERVICE_PORT)
+done
