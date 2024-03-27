@@ -1,6 +1,7 @@
-count=0
+connection_count=0
 while true; do
-  response="$count"
+  response="$connection_count $connection_time"
   request=$(echo $response | nc -v -l -p $SERVICE_PORT)
-  count=$((count + 1))
+  connection_count=$((connection_count + 1))
+  connection_time=$(date)
 done
