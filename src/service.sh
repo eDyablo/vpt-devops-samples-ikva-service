@@ -4,5 +4,5 @@ while true; do
   request=$(echo $response | nc -v -l -p $SERVICE_PORT)
   connection_count=$((connection_count + 1))
   connection_time=$(date)
-  echo "[$connection_count]${request:+$'\n'$request}"
+  echo -e "[$connection_count]${request:+\n$request}"
 done
