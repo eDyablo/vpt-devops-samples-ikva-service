@@ -16,8 +16,8 @@ COPY src src
 
 ARG PORT=8080
 
-ENV PORT=${PORT}
+ENV SERVICE_PORT=${PORT}
 
 EXPOSE ${PORT}
 
-ENTRYPOINT [ "sh", "src/server.sh" ]
+ENTRYPOINT [ "sh", "src/service.sh" ]
