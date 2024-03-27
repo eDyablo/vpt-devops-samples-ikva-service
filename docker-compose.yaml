@@ -4,3 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        PORT: 3030
+    ports:
+    - target: 3030
+      published: 8080
